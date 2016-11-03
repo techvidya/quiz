@@ -10,16 +10,31 @@
 <body>
   <header>
     <h1>The Quiz Show</h1>
-    <p>Score: <strong id="score">0</strong></p>
   </header>
+  <h2>Score: <strong id="score">0</strong></h2>
+    <section id="begin">
+		<p>Choose The Quiz You Want To Play</p>
+	</section>
+  <section id="choosenow"></section>
+  <!--	
+  <form id="myChoice "onchange="mySelection()">
+  -->
+  <form id="formChoice">
+	<select id="quizChoice">
+	<option>Harry Potter</option>
+	<option>Superhero</option>
+	</select>
+<!--	<button type ="submit" id="choice">Submit Your Choice</button>
+-->
+  </form>
 
   <section id="question"></section>
   <form id="answer">
-    <input type="text" autofocus>
+	<select id="selectOption" autofocus></select>
     <button>Submit Answer</button>
   </form>
-  <section id="feedback"></section>
-  <button id="start">Click to Start</button>
+	<section id="feedback"></section>
+    <button id="start">Click to Start</button>
 </body>
   <script src="js/scripts.js"></script>
 </html>
